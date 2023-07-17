@@ -1,0 +1,37 @@
+Car Dealership
+
+Vehicle:
+- salesperson one to many
+- customer one to many
+- service one to one
+
+
+Salesperson:
+- vehicle many to one
+- invoice many to one
+
+
+Customer:
+- cars many to one
+- invoice many to one
+- vehicle many to one
+- service one to one
+
+Invoice:
+- customer one to many
+- salesperson one to many
+- vehicle one to one
+
+
+Service:
+- mechanic many to many
+- vehicle one to many
+
+
+Mechanic:
+- car many to many
+- service many to many
+
+
+
+
